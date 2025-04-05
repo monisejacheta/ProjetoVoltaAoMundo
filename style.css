@@ -1,0 +1,90 @@
+/* Estilos personalizados */
+
+/* Reset de margens e padding */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Estilos para a navbar */
+.navbar {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    padding: 0.5rem 1rem;
+}
+
+/* Container fluid para ocupar toda a largura */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Estilos para as divs principais */
+.div1 {
+    background-color: #e9ecef;
+    padding: 20px;
+    height: calc(100vh - 56px);
+    position: sticky;
+    top: 56px;
+    border-right: 1px solid #dee2e6;
+}
+
+.div2 {
+    background-color: #f8f9fa;
+    padding: 20px;
+    min-height: calc(100vh - 56px);
+}
+
+.div3 {
+    background-color: #e9ecef;
+    padding: 20px;
+    min-height: calc(100vh - 56px);
+    border-left: 1px solid #dee2e6;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    min-height: 100vh;
+}
+
+/* Estilos para os links do menu lateral */
+.nav.flex-column .nav-link {
+    color: #495057;
+    padding: 8px 15px;
+    margin: 2px 0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav.flex-column .nav-link:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+/* Estilos responsivos adicionais */
+@media (max-width: 991.98px) {
+    .div1 {
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid #dee2e6;
+    }
+    
+    .div3 {
+        border-left: none;
+        border-top: 1px solid #dee2e6;
+    }
+}
+
+/* Estilos para os cards */
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
