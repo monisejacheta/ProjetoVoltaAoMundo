@@ -1,5 +1,4 @@
 /* Estilos personalizados */
-
 body {
     margin: 0;
     padding: 0;
@@ -39,17 +38,33 @@ body {
     padding: 0.25rem 0.5rem;
 }
 
-/* Div1 com texto JAPÃO vertical */
+/* Div1 - Lateral Esquerda */
 .div1 {
     background-color: #e9ecef;
     min-height: calc(100vh - 56px);
     border-right: 1px solid #dee2e6;
-    width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
 }
 
+/* Div2 - Conteúdo Principal */
+.div2 {
+    background-color: #f8f9fa;
+    padding: 20px;
+    min-height: calc(100vh - 56px);
+}
+
+/* Div3 - Lateral Direita */
+.div3 {
+    background-color: #e9ecef;
+    padding: 20px;
+    min-height: calc(100vh - 56px);
+    border-left: 1px solid #dee2e6;
+}
+
+/* Texto JAPÃO */
 .japao-text {
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -62,48 +77,38 @@ body {
     line-height: 1.8;
 }
 
-/* Ajuste das outras divs */
-.div2 {
-    background-color: #f8f9fa;
-    padding: 20px;
-    min-height: calc(100vh - 56px);
-}
-
-.div3 {
-    background-color: #e9ecef;
-    padding: 20px;
-    min-height: calc(100vh - 56px);
-    border-left: 1px solid #dee2e6;
-}
-
 /* Responsividade */
 @media (max-width: 991.98px) {
-    .navbar-collapse {
-        background-color: #f8f9fa;
-        padding: 10px;
-        margin-top: 10px;
-        border-radius: 4px;
-    }
-    
     .div1 {
-        width: 100%;
         min-height: auto;
-        height: 80px;
+        height: auto;
+        width: 100%;
         border-right: none;
         border-bottom: 1px solid #dee2e6;
+        padding: 15px 0;
     }
     
-    .japao-text {
-        writing-mode: horizontal-tb;
-        transform: none;
-        letter-spacing: 2px;
-        padding: 15px 0;
+    .div2, .div3 {
+        min-height: auto;
+        width: 100%;
     }
     
     .div3 {
         border-left: none;
         border-top: 1px solid #dee2e6;
     }
+    
+    .japao-text {
+        writing-mode: horizontal-tb;
+        transform: none;
+        letter-spacing: 2px;
+        padding: 10px 0;
+    }
+    
+    /* Ordem dos elementos em mobile */
+    .order-1 { order: 1; } /* div1 */
+    .order-2 { order: 2; } /* div3 */
+    .order-3 { order: 3; } /* div2 */
 }
 
 /* Cards */
@@ -116,4 +121,62 @@ body {
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+/* Estilo para o logo na navbar */
+.navbar-logo {
+    height: 30px; /* Ajuste conforme necessário */
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+    opacity: 0.8;
+}
+
+/* Ajuste responsivo para o logo */
+@media (max-width: 991.98px) {
+    .navbar-logo {
+        height: 25px; /* Tamanho menor para mobile */
+    }
+}
+
+/* Estilo para o container da imagem */
+.tori-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo para a div3 */
+.div3 {
+    background-color: #e9ecef;
+    min-height: calc(100vh - 56px);
+    border-left: 1px solid #dee2e6;
+    padding: 0;
+    overflow: hidden;
+    position: relative; /* Adicionado para posicionamento absoluto da imagem */
+}
+
+/* Estilo para a imagem tori */
+.tori-image {
+
+
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Mostra a imagem inteira */
+        object-position: center; /* Centraliza a imagem */
+        background-color: #e9ecef; /* Cor de fundo para espaços vazios */
+
+}
+/* Responsividade */
+@media (max-width: 991.98px) {
+    .div3 {
+        min-height: 50vh;
+        border-left: none;
+        border-top: 1px solid #dee2e6;
+    }
 }
