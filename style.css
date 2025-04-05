@@ -1,35 +1,68 @@
 /* Estilos personalizados */
 
-/* Reset de margens e padding */
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-/* Estilos para a navbar */
+/* Navbar personalizada */
 .navbar {
     background-color: #f8f9fa;
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
     padding: 0.5rem 1rem;
 }
 
-/* Container fluid para ocupar toda a largura */
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
+.navbar-brand {
+    font-weight: 500;
+    color: #495057;
+    transition: all 0.3s ease;
 }
 
-/* Estilos para as divs principais */
+.navbar-brand:hover,
+.navbar-brand.active {
+    color: #0d6efd;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    color: #495057;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Div1 com texto JAPÃO vertical */
 .div1 {
     background-color: #e9ecef;
-    padding: 20px;
-    height: calc(100vh - 56px);
-    position: sticky;
-    top: 56px;
+    min-height: calc(100vh - 56px);
     border-right: 1px solid #dee2e6;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.japao-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #d9534f;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transform: rotate(180deg);
+    line-height: 1.8;
+}
+
+/* Ajuste das outras divs */
 .div2 {
     background-color: #f8f9fa;
     padding: 20px;
@@ -43,32 +76,28 @@ body {
     border-left: 1px solid #dee2e6;
 }
 
-/* Estilo para o conteúdo principal */
-main {
-    min-height: 100vh;
-}
-
-/* Estilos para os links do menu lateral */
-.nav.flex-column .nav-link {
-    color: #495057;
-    padding: 8px 15px;
-    margin: 2px 0;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.nav.flex-column .nav-link:hover {
-    background-color: rgba(13, 110, 253, 0.1);
-    color: #0d6efd;
-}
-
-/* Estilos responsivos adicionais */
+/* Responsividade */
 @media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #f8f9fa;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 4px;
+    }
+    
     .div1 {
-        height: auto;
-        position: static;
+        width: 100%;
+        min-height: auto;
+        height: 80px;
         border-right: none;
         border-bottom: 1px solid #dee2e6;
+    }
+    
+    .japao-text {
+        writing-mode: horizontal-tb;
+        transform: none;
+        letter-spacing: 2px;
+        padding: 15px 0;
     }
     
     .div3 {
@@ -77,7 +106,7 @@ main {
     }
 }
 
-/* Estilos para os cards */
+/* Cards */
 .card {
     border: none;
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
