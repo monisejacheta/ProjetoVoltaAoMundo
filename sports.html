@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esportes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Nosso arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+          body {
+            font-family: 'Lekton', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu Superior -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light menu_teste">
+        <div class="container-fluid col-lg-12 col-md-12">
+            <div class="col-lg-1 col-md-12 home_img">
+                <a class="navbar-brand me-auto" href="index.html">
+                    <img src="img/home1.png" alt="Página Inicial" class="navbar-logo">
+                </a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto lista_menu">
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="food.html">
+                            <img src="img/food.png" alt="Culinária" class="navbar-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="sports.html">
+                            <img src="img/sports.png" alt="Esportes" class="navbar-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="anime.html">
+                            <img src="img/tv.png" alt="Animes" class="navbar-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="travel.html">
+                            <img src="img/travel.png" alt="Turismo" class="navbar-logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container-fluid px-0">
+        <div class="row">
+            <!-- Div 1 - Lateral Esquerda -->
+            <div class="col col-sm-1 div1">
+                <img src="img/j2.png" alt="Japão" class="j-image">
+            </div>
+            
+            <!-- Div 2 - Conteúdo Principal -->
+            <div class="col col-lg-11 row">
+                <div>
+                    <div class="main_text">
+                        <h2 class="fw-bold text_red">Esportes Japoneses</h2>
+                        <p>O Japão é um país que harmoniza perfeitamente esportes tradicionais com modalidades modernas, refletindo sua rica cultura e inovação. Entre os esportes tradicionais, o sumô é o mais icônico, considerado uma arte marcial sagrada com séculos de história. O judô e o kendô também têm raízes profundas, sendo praticados tanto como disciplinas físicas quanto filosóficas.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="main_text">
+                        <div class="row g-4"> <!-- Adicionado g-4 para espaçamento de 30px entre cards -->
+                            <!-- Card 1 -->
+                            <div class="col-12 col-md-6 col-lg-4"> <!-- Organização em colunas responsivas -->
+                                <div class="card h-100 cards_externa"> <!-- h-100 para altura igual -->
+                                    <div class="row g-0 caixa_esporte">
+                                        <div class="col-md-3">
+                                            <img src="img/sports1.jpg" class="img-fluid rounded-start" alt="Sumô">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-header text_red border-0 bg-transparent ps-0">Sumô</h5>
+                                                <p class="card-text">O sumô é um esporte de luta tradicional do Japão, com séculos de história e profundas raízes culturais e religiosas. Mais do que uma competição física, o sumô envolve rituais xintoístas, como o lançamento de sal para purificar o ringue (dohyō), demonstrando a conexão entre o esporte e a espiritualidade japonesa.
+
+                                                Os lutadores, chamados rikishi, seguem um rigoroso treinamento e uma dieta especial para atingir grande massa corporal e força. Cada combate é rápido e intenso, vencendo quem consegue empurrar o adversário para fora do círculo ou fazê-lo tocar o chão com qualquer parte do corpo que não os pés.
+                                                </p>
+                                                <ul class="list-group border-0">
+                                                    <li class="list-group-item d-flex align-items-center border-0 ps-0">
+                                                        <img src="img/trofeu.png" alt="Ícone" class="me-2" style="width:16px;height:16px;">
+                                                        Torneios (basho): 6 por ano. 
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center border-0 ps-0">
+                                                        <img src="img/people.png" alt="Ícone" class="me-2" style="width:16px;height:16px;">
+                                                        Título: vencedores são os yokozuna.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card h-100 cards_externa">
+                                    <div class="row g-0 caixa_esporte">
+                                        <div class="col-md-3">
+                                            <img src="img/sports2.jpg" class="img-fluid rounded-start" alt="Kendo">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-header text_red border-0 bg-transparent ps-0">Kendo</h5>
+                                                <p class="card-text"> Originário do kenjutsu ou esgrima, a importante arte marcial dos samurais, os competidores usam equipamentos especiais de proteção e batem na cabeça, no peito ou nas mãos do oponente com uma espada de bambu.
+                                                O objetivo é marcar golpe válidos em áreas específicas do adversário (cabeça, torso, punho e garganta) com precisão e espírito correto (ki-ken-tai-ichi). Além da técnica, o Kendo busca o desenvolvimento do caráter, disciplina e respeito (reiho).
+                                                </p>
+                                                <ul class="list-group border-0">
+                                                    <li class="list-group-item d-flex align-items-center border-0 ps-0">
+                                                        <img src="img/medal1.png" alt="Ícone" class="me-2" style="width:16px;height:16px;">
+                                                        Campeonato: há competição mundial.
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center border-0 ps-0">
+                                                        <img src="img/people.png" alt="Ícone" class="me-2" style="width:16px;height:16px;">
+                                                        Equipamento: Shinai (espada de bambu), bōgu (armadura) e hakama (vestimenta tradicional). 
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 3 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card h-100 cards_externa">
+                                    <div class="row g-0">
+                                        <div class="col-md-3">
+                                            <img src="img/sports3.jpg" class="img-fluid rounded-start" alt="Judo">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-header text_red border-0 bg-transparent ps-0">Judô</h5>
+                                                <p class="card-text"> O judô, que significa "caminho suave", é uma arte marcial japonesa criada por Jigoro Kano em 1882. Surgiu como uma evolução do jujutsu tradicional, com foco em técnicas de projeção, imobilização e disciplina mental. No Japão, o judô não é apenas um esporte, mas também uma filosofia que valoriza respeito, autocontrole e desenvolvimento pessoal.
+                                                Combinando tradição e competição, o judô no Japão continua a inspirar gerações, mantendo vivos os princípios de harmonia e eficácia que definem essa arte marcial.
+                                                </p>
+                                                <ul class="list-group border-0">
+                                                    <li class="list-group-item d-flex align-items-center border-0 ps-0">
+                                                        <img src="img/medal1.png" alt="Ícone" class="me-2" style="width:16px;height:16px;">
+                                                        Ouro: 3 em Paris 24.
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center border-0 ps-0">
+                                                        <img src="img/medal2.png" alt="Ícone" class="me-2" style="width:16px;height:16px;">
+                                                        Prata: 2 em Paris 24. 
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center border-0 ps-0">
+                                                        <img src="img/medal 3.png" alt="Ícone" class="me-2" style="width:16px;height:16px;">
+                                                        Bronze: 3 em Paris 24. 
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
