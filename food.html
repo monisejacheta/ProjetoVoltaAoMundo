@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volta ao Mundo - Japão</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Nosso arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+          body {
+            font-family: 'Lekton', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu Superior -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light menu_teste">
+        <div class="container-fluid col-lg-12 col-md-12">
+            <div class="col-lg-1 col-md-12 home_img">
+                <a class="navbar-brand me-auto" href="index.html">
+                    <img src="img/home1.png" alt="Página Inicial" class="navbar-logo">
+                </a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto lista_menu">
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="food.html">
+                            <img src="img/food.png" alt="Culinária" class="navbar-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="sports.html">
+                            <img src="img/sports.png" alt="Esportes" class="navbar-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="anime.html">
+                            <img src="img/tv.png" alt="Animes" class="navbar-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="travel.html">
+                            <img src="img/travel.png" alt="Turismo" class="navbar-logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container-fluid px-0">
+        <div class="row">
+            <!-- Div 1 - Lateral Esquerda -->
+            <div class="col col-sm-1 div1">
+                <img src="img/j2.png" alt="Japão" class="j-image">
+            </div>
+            
+            <!-- Div 2 - Conteúdo Principal -->
+            <div class="col col-lg-11 row">
+                <div>
+                    <div class="main_text">
+                        <h2 class="fw-bold text_red">Culinária Japonesa</h2>
+                        <p>Reconhecida pela UNESCO como Patrimônio Cultural Imaterial, a culinária japonesa vai muito além do sushi e do sashimi. Em seguida, vamos falar sobre alguns pratos que não são tão conhecidos internacionalmente.</p>
+                    </div>
+                </div>
+                
+                <div class="referencia">
+                    <div class="main_text">
+                        <div class="row">
+                            <div class="col-sm-4 mb-4 cards_externa">
+                                <div class="card h-100">
+                                    <h5 class="card-header text_red">Okonomiyaki à moda de Kansai</h5>
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="image-container">
+                                            <img src="img/food1.jpg" class="card-img-top img-fluid fixed-image" alt="Okonomiyaki" 
+                                                 data-bs-toggle="modal" 
+                                                 data-bs-target="#okonomiyakiModal">
+                                        </div>
+                                        <div class="mt-3">
+                                            <p class="card-text">Essa comida é a base na qual os outros estilos se espelharam. Uma simples combinação de repolho, farinha e ovo preparados em uma chapa de ferro e depois cobertos com carne de porco fatiada e um saboroso molho barbecue, salpicado com maionese japonesa e polvilhado com Aonori—alga marinha seca em pó.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 mb-4 cards_externa">
+                                <div class="card h-100">
+                                    <h5 class="card-header text_red">Tokyo Lamén</h5>
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="image-container">
+                                            <img src="img/food2.jpg" class="card-img-top img-fluid fixed-image" alt="Tokyo Lamén" 
+                                                 data-bs-toggle="modal" 
+                                                 data-bs-target="#lamenModal">
+                                        </div>
+                                        <div class="mt-3">
+                                            <p class="card-text">O Lámen é um dos pratos que mais representam a gastronomia japonesa, constituído de macarrão, caldo e acompanhamentos. O Tókyo Lámen é a versão mais conhecida da variações de lamen e reproduzida do prato, e é o lámen mais comum na capital do Japão. Ele é feito com um macarrão fino e ondulado, com com shoyo e acompanha carne de porco, ovo cozido, espinafre japonês e outros.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 mb-4 cards_externa">
+                                <div class="card h-100">
+                                    <h5 class="card-header text_red">Yakitori - frango no espeto assado em fogo aberto</h5>
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="image-container">
+                                            <img src="img/food3.jpg" class="card-img-top img-fluid fixed-image" alt="Tokyo Lamén" 
+                                                 data-bs-toggle="modal" 
+                                                 data-bs-target="#food3Modal">
+                                        </div>
+                                        <div class="mt-3">
+                                            <p class="card-text">Os restaurantes yakitori servem uma grande variedade de alimentos em porções pequenas. Eles vão de barracas de cerveja informais e barulhentas, para beber em pé, frequentadas por profissionais assalariados, a restaurantes mais sofisticados. Os restaurantes yakitori servem todas as partes do frango, até mesmo algumas que não são consumidas no ocidente.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <style>
+                    .fixed-image {
+                        height: 250px; /* Altura fixa para todas as imagens */
+                        width: 100%;
+                        object-fit: cover; /* Mantém a proporção e cobre a área */
+                        cursor: pointer;
+                    }
+                    
+                    .image-container {
+                        overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse o container */
+                    }
+                </style>
+                
+
+                <!-- Modal para o Okonomiyaki -->
+                <div class="modal fade" id="okonomiyakiModal" tabindex="-1" aria-labelledby="okonomiyakiModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="okonomiyakiModalLabel">Okonomiyaki à moda de Kansai</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center align-items-center">
+                                <img src="img/food1.jpg" class="img-fluid" alt="Okonomiyaki em tela cheia">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal para o Tokyo Lamén -->
+                <div class="modal fade" id="lamenModal" tabindex="-1" aria-labelledby="lamenModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="lamenModalLabel">Tokyo Lamén</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center align-items-center">
+                                <img src="img/food2.jpg" class="img-fluid" alt="Tokyo Lamén em tela cheia">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="food3Modal" tabindex="-1" aria-labelledby="food3ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="food3ModalLabel">Yakitori - frango no espeto assado em fogo aberto</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center align-items-center">
+                                <img src="img/food3.jpg" class="img-fluid" alt="Tokyo Lamén em tela cheia">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+           
+        </div>
+        
+    </main>
+
+    <!-- Modal para a bandeira em tela cheia -->
+    <div class="modal fade" id="flagModal" tabindex="-1" aria-labelledby="flagModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="flagModalLabel">Tokyo Lamén</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center">
+                    <img src="img/food2.jpg" class="img-fluid" alt="Bandeira do Japão em tela cheia">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="flagModal" tabindex="-1" aria-labelledby="flagModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="flagModalLabel">Okonomiyaki à moda de Kansai</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center">
+                    <img src="img/food1.jpg" class="img-fluid" alt="Bandeira do Japão em tela cheia">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
