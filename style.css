@@ -3,7 +3,11 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
+    font-family: 'Lekton', sans-serif !important;
+}
+main{
+    padding-left: 10px;
 }
 
 /* Navbar personalizada */
@@ -139,13 +143,14 @@ body {
 
 /* Estilo para a div1 */
 .div1 {
+    width: 95px ;
     background-color: #F4F4F4;
     min-height: calc(100vh - 56px);
-    border-right: 1px solid #dee2e6;
+
     display: flex;            /* Ativa flexbox */
     justify-content: center;  /* Centraliza horizontalmente */
     align-items: center;      /* Centraliza verticalmente */
-    padding: 10px 0px;
+    padding-left: 20px;
 }
 
 /* Estilo para a imagem */
@@ -170,6 +175,61 @@ body {
 .container-fluid{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     
+}
+.lista_menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding-right: 5px;
+}
+li {
+    padding-left: 60px;
+}
+.home_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu_teste{
+    background-color: #F4F4F4 !important;
+}
+
+.main_text {
+    padding: 20px; /* Adicionado para melhor espaçamento interno */
+    margin: 10px 0; /* Adicionado para espaçamento externo */
+}
+
+.main_text h2 {
+    padding: 10px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #dee2e6;
+}
+.main_text p{
+    font-size: larger;
+    padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a, span, li,
+.navbar-brand, .main_text, 
+.menu_teste, .div1, .div2, .div3 {
+    font-family: 'Lekton', sans-serif !important;
+}
+.btn_saiba{
+    padding-top: 15px;
+}
+.text_red{
+    color: #D30000;
+}
+.cards_teste{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cards_externa{
+    padding-top: 20px;
 }
