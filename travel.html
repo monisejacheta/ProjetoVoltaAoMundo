@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Nosso arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Lekton', sans-serif;
+        }
+        
+        /* Estilos para centralizar e padronizar o carrossel */
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 800px; /* Ajuste conforme necessário */
+        }
+        
+        .carousel-inner {
+            max-height: 500px; /* Altura fixa para todas as imagens */
+            overflow: hidden;
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: 500px; /* Altura fixa */
+            object-fit: cover; /* Garante que a imagem cubra todo o espaço mantendo a proporção */
+        }
+        
+        .cards_externa {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        
+        .card {
+            width: 100%;
+            max-width: 800px; /* Largura máxima do card */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu Superior -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light menu_teste">
+        <div class="container-fluid col-lg-12 col-md-12">
+            <div class="col-lg-1 col-md-12 home_img">
+                <a class="navbar-brand me-auto" href="index.html">
+                    <img src="img/home1.png" alt="Página Inicial" class="navbar-logo">
+                </a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto lista_menu">
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="food.html">
+                            <img src="img/food.png" alt="Culinária" class="navbar-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="sports.html">
+                            <img src="img/sports.png" alt="Esportes" class="navbar-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="anime.html">
+                            <img src="img/tv.png" alt="Animes" class="navbar-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand me-auto" href="travel.html">
+                            <img src="img/travel.png" alt="Turismo" class="navbar-logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container-fluid px-0">
+        <div class="row">
+            <!-- Div 1 - Lateral Esquerda -->
+            <div class="col col-sm-1 div1">
+                <img src="img/j2.png" alt="Japão" class="j-image">
+            </div>
+            
+            <!-- Div 2 - Conteúdo Principal -->
+            <div class="col col-lg-11 row">
+                <div>
+                    <div class="main_text">
+                        <h2 class="fw-bold text_red">Turistando no Japão</h2>
+                        <p>O Japão é um destino fascinante que combina história milenar com tecnologia de ponta. Cidades como Tóquio e Osaka impressionam com seus arranha-céus, luzes neon e gastronomia diversificada, enquanto Kyoto e Nara preservam templos ancestrais, jardins zen e tradições culturais como as gueixas e cerimônias do chá.
+
+                            A natureza também se destaca, seja nos famosos hanami (apreciação das cerejeiras em flor) na primavera, nas estações de esqui de Hokkaido no inverno ou nas praias de Okinawa no verão. Além disso, a eficiência do transporte público, especialmente os trens-bala Shinkansen, facilita a exploração do país.
+                            
+                            Com sua hospitalidade (omotenashi), culinária premiada e atrativos únicos, o Japão oferece uma experiência inesquecível para todos os tipos de viajantes. </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="main_text">
+                        <div class="row">
+                            <h2 class="fw-bold text_red">Sugestão de lugares</h2>
+                            <div class="col-sm-12 cards_externa">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <!-- Carrossel de imagens -->
+                                        <div class="carousel-container">
+                                            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="img/img1.jpeg" class="d-block w-100" alt="">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/img2.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/img3.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/img4.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-body text-center">
+                                            <p class="card-text">Alguns lugares do Japão que você pode conhecer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
