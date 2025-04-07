@@ -233,3 +233,19 @@ p, a, span, li,
 .cards_externa{
     padding-top: 20px;
 }
+
+.custom-row {
+    border-top: 1px solid #dee2e6; /* Cor compatível com Bootstrap */
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.custom-img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 400px; 
+}
+.custom-text {
+    padding: 12px; 
+}
